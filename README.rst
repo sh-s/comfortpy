@@ -12,7 +12,7 @@ Installation
 
 ::
 
-    pip install compy   
+    pip install comfortpy   
     
 
 Instructions
