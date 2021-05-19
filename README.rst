@@ -3,7 +3,9 @@ Overview
 ========
 
 
-Package to calculate thermal discomfort severity under several thermal definitions (e.g. traditional thermal comfort, sleep comfort, occupant health and safety limits, etc.).
+Package to calculate thermal discomfort severity under several thermal definitions (e.g. traditional PMV and Adaptive thermal comfort, sleep comfort, occupant health and safety limits, etc.). 
+
+Please cite us if you use this package: Salimi S, Estrella Guillén E, Samuelson H. Exceedance Degree- Hours: A new method for assessing long- term thermal conditions. Indoor Air. 2021;00:1–16. https://doi.org/10.1111/ina.12855
 
 * Free software: MIT license
 
