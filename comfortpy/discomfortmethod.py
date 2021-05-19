@@ -4,7 +4,7 @@ Python version used: 3.7
 Created by: Shide Salimi, Harvard University, February 2021
 ssalimi@gsd.harvard.edu,
 shide.salimi@gmail.com,
-Version 0.0.0
+Version 0.0.2
 """
 
 import pandas as pd
@@ -497,7 +497,7 @@ def pmv_model(df, i, comfortzone):
                                     df['clo'][i], wme=0, body_surface_area=BODY_SURFACE_AREA, 
                                     patm=101325, units='SI')
                 
-        discomfort = math.fabs(SET_point - SET_closest_point)
+        discomfort = SET_point - SET_closest_point
     
     return discomfort
 
@@ -543,14 +543,14 @@ def adaptive_model(df, i, t_rm):
                             df['rh'][i], df['met'][i], 
                             df['clo'][i], wme=0, body_surface_area=BODY_SURFACE_AREA, 
                             patm=101325, units='SI')
-            discomfort = math.fabs(SET_point - SET_80_up)
+            discomfort = SET_point - SET_80_up
         else:
             # Determine SET corresponding the lower acceptable comfort temperature for 80% occupants
             SET_80_low = set_tmp(tdb_80_low, tdb_80_low, df['v'][i], 
                             df['rh'][i], df['met'][i], 
                             df['clo'][i], wme=0, body_surface_area=BODY_SURFACE_AREA, 
                             patm=101325, units='SI')
-            discomfort = math.fabs(SET_point - SET_80_low)
+            discomfort = SET_point - SET_80_low
     
     return discomfort
 

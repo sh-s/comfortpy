@@ -4,7 +4,7 @@ Python version used: 3.7
 Created by: Shide Salimi, Harvard University, February 2021
 ssalimi@gsd.harvard.edu,
 shide.salimi@gmail.com,
-Version 0.0.0
+Version 0.0.2
 """
 from pythermalcomfort.psychrometrics import *
 import math
